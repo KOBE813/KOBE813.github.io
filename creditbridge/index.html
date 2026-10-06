@@ -1,1 +1,302 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><title>CreditBridge — Is your $1,700 free? | Federal Scholarship Tax Credit checker</title><meta name="description" content="CreditBridge: check whether the Federal Scholarship Tax Credit (IRC §25F) could apply to you. Starts Jan 1, 2027. Not tax advice." /><meta name="application-name" content="CreditBridge" /><meta property="og:site_name" content="CreditBridge" /><meta property="og:type" content="website" /><meta property="og:url" content="https://kobe813.github.io/creditbridge/" /><meta property="og:title" content="CreditBridge — Is your $1,700 free?" /><meta property="og:description" content="A 60-second check for the Federal Scholarship Tax Credit (IRC §25F). Starts Jan 1, 2027. Not tax advice." /><meta name="twitter:card" content="summary" /><meta name="twitter:title" content="CreditBridge — Is your $1,700 free?" /><meta name="twitter:description" content="A 60-second check for the Federal Scholarship Tax Credit (IRC §25F). Not tax advice." /><link rel="canonical" href="https://kobe813.github.io/creditbridge/" /><link rel="stylesheet" href="/creditbridge/styles.css" /></head><body><header><div class="wrap nav"><a class="brand" href="/creditbridge/" aria-label="CreditBridge home" style="color:inherit;"><div class="logo">CB</div> CreditBridge</a><nav class="nav-links"><a class="hide-sm" href="#checker">Checker</a><a class="hide-sm" href="#how">How it works</a><a class="hide-sm" href="#faq">FAQ</a><a class="nav-cta" href="#notify">Get notified</a></nav></div></header><main><section class="hero"><div class="wrap"><div class="badge reveal"><span class="pulse"></span> Federal Scholarship Tax Credit · opens Jan 1, 2027</div><h1 class="reveal">Is your <span class="grad">$1,700</span> free?</h1><p class="lede reveal">A 60-second check for the new federal credit on cash gifts to Scholarship Granting Organizations. Plain English. Verified from IRS and CRS sources.</p><div class="cta-row reveal"><a class="btn btn-primary" href="#checker">Start the check →</a><a class="btn btn-ghost" href="#how">How it works</a></div><div class="disclaimer-banner reveal"><strong>Not tax advice.</strong> This page is general information only — not tax, legal, or financial advice. Rules can change. Confirm with the IRS and a qualified tax professional before donating or claiming a credit.</div></div></section><div class="wrap trust reveal"><div class="trust-item"><div class="n">$1,700</div><div class="l">Max per taxpayer</div></div><div class="trust-item"><div class="n">Jan 1</div><div class="l">2027 gifts start</div></div><div class="trust-item"><div class="n">30</div><div class="l">States opted in*</div></div><div class="trust-item"><div class="n">5 yrs</div><div class="l">Carryforward</div></div></div><section id="checker"><div class="wrap"><div class="section-head"><h2>Check your situation</h2><p class="section-sub">Three quick questions. Instant plain-English result. Nothing is stored or submitted.</p></div><div class="layout-checker"><div class="card checker-shell"><div class="progress" id="progress" aria-label="Progress"><div class="progress-step active" data-p="1"><span class="dot">1</span> Tax bill</div><div class="progress-line"></div><div class="progress-step" data-p="2"><span class="dot">2</span> Filing</div><div class="progress-line"></div><div class="progress-step" data-p="3"><span class="dot">3</span> State</div><div class="progress-line"></div><div class="progress-step" data-p="4"><span class="dot">4</span> Result</div></div><div class="step-panel active" data-step="1"><p class="step-title">Do you expect to owe federal income tax for 2027?</p><p class="step-help">This credit is nonrefundable — it only helps if you have tax liability to reduce.</p><div class="option-grid"><button type="button" class="option" data-key="tax" data-val="yes"><span class="opt-title">Yes</span><span class="opt-sub">I usually owe, or expect to owe, some federal income tax</span></button><button type="button" class="option" data-key="tax" data-val="maybe"><span class="opt-title">Not sure</span><span class="opt-sub">My refund / balance due varies year to year</span></button><button type="button" class="option" data-key="tax" data-val="no"><span class="opt-title">No</span><span class="opt-sub">I typically owe $0 or get a full refund of all withheld tax</span></button></div><div class="nav-btns"><span></span><button type="button" class="btn btn-primary" id="next1" disabled>Continue</button></div></div><div class="step-panel" data-step="2"><p class="step-title">How will you file?</p><p class="step-help">Filing status affects how the $1,700 cap may apply under proposed rules.</p><div class="option-grid"><button type="button" class="option" data-key="status" data-val="single"><span class="opt-title">Single / Head of household / Married filing separately</span><span class="opt-sub">Plan around the $1,700 per-taxpayer limit</span></button><button type="button" class="option" data-key="status" data-val="mfj"><span class="opt-title">Married filing jointly</span><span class="opt-sub">Proposed rules may allow up to $3,400 if each spouse gives</span></button></div><div class="nav-btns"><button type="button" class="btn btn-ghost" data-back="1">Back</button><button type="button" class="btn btn-primary" id="next2" disabled>Continue</button></div></div><div class="step-panel" data-step="3"><p class="step-title">Where do you live?</p><p class="step-help">Your state affects whether local students can receive scholarships — not whether you can donate.</p><label class="field-label" for="state">Select your state</label><select id="state"><option value="">Choose state…</option></select><div class="nav-btns"><button type="button" class="btn btn-ghost" data-back="2">Back</button><button type="button" class="btn btn-primary" id="next3" disabled>See my result</button></div></div><div class="step-panel" data-step="4"><div id="resultCard"></div><div class="nav-btns"><button type="button" class="btn btn-ghost" id="restart">Start over</button><a class="btn btn-primary" href="#notify">Get launch updates</a></div></div></div><aside class="card side-panel"><div class="mini-fact"><div class="k">What this is</div><div class="v">Federal Scholarship Tax Credit (IRC §25F)</div></div><div class="mini-fact"><div class="k">Credit type</div><div class="v">Nonrefundable · dollar-for-dollar</div></div><div class="mini-fact"><div class="k">Eligible gift</div><div class="v">Cash to a listed SGO</div></div><div class="mini-fact"><div class="k">State list (IRS)</div><div class="v">As of Sep 14, 2026</div></div><p class="muted-2" style="margin:1rem 0 0;">Sources: <a href="https://www.irs.gov/government-entities/federal-state-local-governments/federal-scholarship-tax-credit-fstc" target="_blank" rel="noopener">IRS FSTC</a> · <a href="https://www.congress.gov/crs-product/R48724" target="_blank" rel="noopener">CRS R48724</a></p></aside></div><p class="muted-2" style="margin-top:0.85rem;">*30 states with advance elections to participate for 2027, per IRS page reviewed Sep 16, 2026.</p></div></section><section id="how"><div class="wrap"><div class="section-head"><h2>How it works</h2><p class="section-sub">Verified facts from the IRS and Congressional Research Service — nothing more.</p></div><div class="steps-grid"><div class="step-card"><div class="step-num">1</div><h3>Give cash to an eligible SGO</h3><p>On or after Jan 1, 2027, donate cash to a Scholarship Granting Organization on a participating state’s IRS list. Designate it as a qualified contribution.</p></div><div class="step-card"><div class="step-num">2</div><h3>Claim a dollar-for-dollar credit</h3><p>Individuals may claim a nonrefundable federal credit equal to the gift, up to $1,700 per taxpayer. It reduces tax owed — it is not a cash refund by itself.</p></div><div class="step-card"><div class="step-num">3</div><h3>Donate from anywhere</h3><p>You can generally give from any state. Scholarships go to eligible students in opted-in states. Living in a non-participating state does not by itself block the donor credit.</p></div><div class="step-card"><div class="step-num">4</div><h3>Watch the offsets</h3><p>The federal credit is reduced by any state tax credit for the same gift. You cannot also claim a charitable deduction for the same contribution.</p></div></div></div></section><section id="faq"><div class="wrap"><div class="section-head"><h2>FAQ</h2><p class="section-sub">Straight answers, with sources noted.</p></div><div class="faq"><details open><summary>Is the credit refundable?</summary><p class="faq-body">No. It is nonrefundable. It can reduce federal income tax you owe, but will not create a refund by itself if the credit exceeds your tax. Unused amounts may generally be carried forward up to five years. (CRS R48724; IRC §25F.)</p></details><details><summary>Can married couples claim $3,400?</summary><p class="faq-body"><strong>Uncertain until final regs.</strong> The statute caps the credit at $1,700 per taxpayer. Proposed Treasury/IRS regulations (Oct 2, 2026, REG-117199-25) interpret each spouse on a joint return as having a separate $1,700 limit — up to $3,400 total — if each spouse makes up to $1,700 of qualifying contributions. Treat $3,400 as proposed, not final.</p></details><details><summary>Do I have to live in an opted-in state?</summary><p class="faq-body">No for donors. Residents of nonparticipating states may still get credits for gifts to SGOs in participating states. Families in nonparticipating states generally cannot receive these federally supported scholarships.</p></details><details><summary>What counts as a qualifying gift?</summary><p class="faq-body">Cash contributions only (not stock or other property under the enacted law). Must go to a qualifying SGO on a participating state’s list. Cannot be earmarked for a particular student.</p></details><details><summary>Which states have opted in?</summary><p class="faq-body">As of September 14, 2026, the IRS lists 30 states with advance elections for 2027: AL, AK, AR, CO, FL, GA, ID, IN, IA, KS, KY, LA, MS, MO, MT, NE, NV, NH, ND, NC, OH, OK, SC, SD, TN, TX, UT, VA, WV, WY.</p></details></div><div class="sources"><h3>Primary sources</h3><ul><li><a href="https://www.irs.gov/government-entities/federal-state-local-governments/federal-scholarship-tax-credit-fstc" target="_blank" rel="noopener">IRS — Federal Scholarship Tax Credit (FSTC)</a></li><li><a href="https://www.congress.gov/crs-product/R48724" target="_blank" rel="noopener">CRS Report R48724</a></li><li><a href="https://www.govinfo.gov/content/pkg/FR-2026-10-02/html/2026-20277.htm" target="_blank" rel="noopener">Proposed regulations REG-117199-25</a></li></ul></div></div></section><section id="notify"><div class="wrap"><div class="card" style="max-width:640px; margin:0 auto;"><h2>Get notified when gifts open</h2><p class="muted" style="margin-top:0.35rem;">We’ll tip you when qualifying donations can begin (Jan 1, 2027) and when partner SGOs are listed.</p><form id="notifyForm" action="https://formsubmit.co/ajax/mr.ace8019@gmail.com" method="POST" style="margin-top:1rem;"><input type="hidden" name="_subject" value="CreditBridge waitlist signup" /><input type="hidden" name="_template" value="table" /><input type="hidden" name="_captcha" value="false" /><input type="hidden" name="source" value="creditbridge" /><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" /><div class="two-up"><div class="field"><label class="field-label" for="name">Name (optional)</label><input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" /></div><div class="field"><label class="field-label" for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required /></div></div><div class="two-up"><div class="field"><label class="field-label" for="stateWaitlist">State</label><select id="stateWaitlist" name="state" required><option value="">Choose state…</option></select></div><div class="field"><label class="field-label" for="interest">I’m interested as…</label><select id="interest" name="interest" required><option value="Taxpayer / donor">Taxpayer / donor</option><option value="Parent / family">Parent / family</option><option value="School or church campaign lead">School or church campaign lead</option><option value="Just curious">Just curious</option></select></div></div><button class="btn btn-primary" id="notifyBtn" type="submit" style="width:100%;">Join waitlist</button><p id="notifyMsg" class="muted" style="margin-top:0.75rem; display:none;"></p><p class="muted-2" style="margin-top:0.9rem;">Privacy: we use your email only to send CreditBridge launch updates about the Federal Scholarship Tax Credit. No selling or sharing. Not tax advice. Reply to a waitlist email anytime to be removed.</p></form></div></div></section></main><footer><div class="wrap"><p><strong style="color:var(--text);">Not tax advice.</strong> CreditBridge is an informational site about the Federal Scholarship Tax Credit (IRC §25F). Always verify against current IRS guidance and consult a tax professional.</p><p style="margin-top:0.55rem;">© 2026 CreditBridge · <a href="https://github.com/KOBE813/is-your-1700-free">Source on GitHub</a></p></div></footer><script src="/creditbridge/app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>CreditBridge — Is your $1,700 free? | Federal Scholarship Tax Credit checker</title>
+<meta name="description" content="CreditBridge: check whether the Federal Scholarship Tax Credit (IRC §25F) could apply to you. Starts Jan 1, 2027. Not tax advice." />
+<meta name="application-name" content="CreditBridge" />
+<meta name="theme-color" content="#070b16" />
+<meta name="color-scheme" content="dark" />
+<meta property="og:site_name" content="CreditBridge" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://kobe813.github.io/creditbridge/" />
+<meta property="og:title" content="CreditBridge — Is your $1,700 free?" />
+<meta property="og:description" content="A 60-second check for the Federal Scholarship Tax Credit (IRC §25F). Starts Jan 1, 2027. Not tax advice." />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="CreditBridge — Is your $1,700 free?" />
+<meta name="twitter:description" content="A 60-second check for the Federal Scholarship Tax Credit (IRC §25F). Not tax advice." />
+<link rel="canonical" href="https://kobe813.github.io/creditbridge/" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235eead4'/%3E%3Cstop offset='1' stop-color='%2360a5fa'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Cpath d='M6 21c3-7 7-10 10-10s7 3 10 10M6 23h20M11 16.5V23M16 14v9M21 16.5V23' fill='none' stroke='%2304131a' stroke-width='2.2' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@1,9..144,600&display=swap" />
+<link rel="stylesheet" href="/creditbridge/styles.css" />
+<link rel="stylesheet" href="/creditbridge/styles2.css" />
+</head>
+<body>
+<a class="skip" href="#checker">Skip to the checker</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs><linearGradient id="lg-brand" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#60a5fa"/></linearGradient></defs>
+<symbol id="i-logo" viewBox="0 0 32 32"><rect width="32" height="32" rx="9" fill="url(#lg-brand)"/><path d="M6 21c3-7 7-10 10-10s7 3 10 10M6 23h20M11 16.5V23M16 14v9M21 16.5V23" fill="none" stroke="#04131a" stroke-width="2.2" stroke-linecap="round"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.1a4.3 4.3 0 0 1 7.5 2.7C19.5 15.4 12 20 12 20z"/></symbol>
+<symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 21h18M4.5 21V10M19.5 21V10M3 10l9-6 9 6zM8.5 21v-7M12 21v-7M15.5 21v-7"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9.5 12 4.5l10 5-10 5zM6 11.5v4.8c3.3 2.6 8.7 2.6 12 0v-4.8M22 9.5v5.5"/></symbol>
+<symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2zM9.5 8h5M9.5 12h5M9.5 16h3"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24"><path d="M4.5 6.5h15v13h-15zM4.5 10.5h15M8.5 4v4M15.5 4v4M8.5 14h2M13.5 14h2M8.5 17h2"/></symbol>
+<symbol id="i-map" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.4"/></symbol>
+<symbol id="i-clock" viewBox="0 0 24 24"><path d="M3.5 12a8.5 8.5 0 1 0 2.8-6.3M3.5 4.5v4.2h4.2M12 7.5V12l3 2"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3.2 19.5 6v5.6c0 4.6-3.2 7.9-7.5 9.2-4.3-1.3-7.5-4.6-7.5-9.2V6z"/><path d="m9 12 2.2 2.2L15.2 10"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.2 4.2L19 7"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+<symbol id="i-gift" viewBox="0 0 24 24"><path d="M4 11h16v9.5H4zM3 7.5h18V11H3zM12 7.5v13M12 7.5S10.8 3.5 8.2 3.9c-2.3.4-1.7 3.6 3.8 3.6M12 7.5s1.2-4 3.8-3.6c2.3.4 1.7 3.6-3.8 3.6"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.4 2.4 3.6 5.2 3.6 8.5s-1.2 6.1-3.6 8.5c-2.4-2.4-3.6-5.2-3.6-8.5s1.2-6.1 3.6-8.5z"/></symbol>
+<symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v16M7 20h10M5 7h14M5 7l-2.5 6a3 3 0 0 0 5 0zM19 7l-2.5 6a3 3 0 0 0 5 0z"/></symbol>
+<symbol id="i-q" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.6a2.5 2.5 0 1 1 3.4 2.3c-.7.3-1 .8-1 1.5v.4M12 16.8h.01"/></symbol>
+<symbol id="i-zero" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 12h7"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.2"/><path d="M3 19.5c.7-3.2 3-5 6-5s5.3 1.8 6 5M15.5 5.6a3.2 3.2 0 0 1 0 6M17.5 14.7c2 .6 3.2 2.2 3.6 4.8"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 6.5h16v11H4z"/><path d="m4.5 7 7.5 6 7.5-6"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><path d="M6 10.5h12v9.5H6zM8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M4.5 5.5c2.6-1 5.1-.8 7.5.8 2.4-1.6 4.9-1.8 7.5-.8v13c-2.6-1-5.1-.8-7.5.8-2.4-1.6-4.9-1.8-7.5-.8zM12 6.3v13"/></symbol>
+<symbol id="i-return" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></symbol>
+</defs>
+</svg>
+
+<header class="site-header" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="/creditbridge/" aria-label="CreditBridge home"><svg class="brand-mark" aria-hidden="true"><use href="#i-logo"/></svg><span>CreditBridge</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#flow">How it flows</a>
+      <a href="#checker">Checker</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="#notify">Get notified<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow reveal"><span class="pulse" aria-hidden="true"></span>Federal Scholarship Tax Credit · opens Jan 1, 2027</p>
+      <h1 class="reveal">Is your <span class="money">$1,700</span> <em>free?</em></h1>
+      <p class="lede reveal">A 60-second check for the new federal credit on cash gifts to Scholarship Granting Organizations. Plain English. Verified from IRS and CRS sources.</p>
+      <div class="cta-row reveal">
+        <a class="btn btn-primary" href="#checker">Start the check<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="#flow">See how it flows</a>
+      </div>
+      <div class="disclaimer reveal" role="note"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg><p><strong>Not tax advice.</strong> This page is general information only — not tax, legal, or financial advice. Rules can change. Confirm with the IRS and a qualified tax professional before donating or claiming a credit.</p></div>
+    </div>
+    <figure class="hero-art reveal">
+      <div class="art-frame"><img src="/creditbridge/hero.svg" width="560" height="480" alt="Illustration: a bridge carries a cash gift from your home, through a Scholarship Granting Organization, to a student's school, while a federal tax credit of up to $1,700 comes back to you." fetchpriority="high" /></div>
+    </figure>
+  </div>
+  <div class="wrap">
+    <ul class="stats reveal" aria-label="Key facts">
+      <li><span class="stat-ic"><svg aria-hidden="true"><use href="#i-receipt"/></svg></span><span><b>$1,700</b><small>Max per taxpayer</small></span></li>
+      <li><span class="stat-ic"><svg aria-hidden="true"><use href="#i-cal"/></svg></span><span><b>Jan 1, 2027</b><small>Gifts start counting</small></span></li>
+      <li><span class="stat-ic"><svg aria-hidden="true"><use href="#i-map"/></svg></span><span><b>30 states</b><small>Opted in*</small></span></li>
+      <li><span class="stat-ic"><svg aria-hidden="true"><use href="#i-clock"/></svg></span><span><b>5 years</b><small>Carryforward</small></span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="flow">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="kicker">How the credit flows</p>
+      <h2>Your gift crosses the bridge. <span class="grad block">The credit comes back.</span></h2>
+      <p class="section-sub">Three parties, one loop. You give cash to an SGO, the SGO funds a student’s scholarship, and your federal tax bill can drop by the amount you gave — up to $1,700.</p>
+    </div>
+    <div class="flow reveal">
+      <ol class="flow-track">
+        <li class="node node-a">
+          <span class="node-step">01</span>
+          <span class="node-ic"><svg aria-hidden="true"><use href="#i-heart"/></svg></span>
+          <h3>You give</h3>
+          <p>A cash gift to an eligible SGO on a participating state’s IRS list.</p>
+          <span class="chip chip-amt">Up to $1,700</span>
+        </li>
+        <li class="link link-1" aria-hidden="true"><span class="link-line"><i></i></span><span class="link-tag">Cash gift</span></li>
+        <li class="node node-b">
+          <span class="node-step">02</span>
+          <span class="node-ic"><svg aria-hidden="true"><use href="#i-bank"/></svg></span>
+          <h3>SGO grants</h3>
+          <p>The Scholarship Granting Organization turns gifts into scholarships.</p>
+          <span class="chip">Can’t be earmarked</span>
+        </li>
+        <li class="link link-2" aria-hidden="true"><span class="link-line"><i></i></span><span class="link-tag">Scholarship</span></li>
+        <li class="node node-c">
+          <span class="node-step">03</span>
+          <span class="node-ic"><svg aria-hidden="true"><use href="#i-cap"/></svg></span>
+          <h3>A student learns</h3>
+          <p>Eligible students in opted-in states receive the scholarship.</p>
+          <span class="chip">Participating states</span>
+        </li>
+      </ol>
+      <div class="flow-return">
+        <svg class="return-arc" viewBox="0 0 1000 90" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="lg-ret" x1="1" x2="0"><stop offset="0" stop-color="#a78bfa" stop-opacity=".15"/><stop offset=".5" stop-color="#60a5fa"/><stop offset="1" stop-color="#5eead4"/></linearGradient></defs><path d="M860 4 C860 70, 820 80, 700 80 L300 80 C180 80, 140 70, 140 4" fill="none" stroke="url(#lg-ret)" stroke-width="2.5" stroke-dasharray="6 7" vector-effect="non-scaling-stroke"/></svg>
+        <div class="return-card">
+          <span class="return-ic"><svg aria-hidden="true"><use href="#i-return"/></svg></span>
+          <div><p class="return-k">Back to you, via your tax return</p><p class="return-v"><b>Up to $1,700</b> off the federal income tax you owe</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="math reveal" aria-label="Example math">
+      <div class="math-row"><span>Your cash gift to an eligible SGO</span><b>$1,700</b></div>
+      <div class="math-row neg"><span>Federal tax credit (dollar-for-dollar, nonrefundable)</span><b>−$1,700</b></div>
+      <div class="math-row total"><span>Net cost to you, if you owe at least $1,700 in federal income tax</span><b>$0</b></div>
+      <p class="math-note">Illustration only. The credit is reduced by any state tax credit for the same gift, and you can’t also deduct the same gift as a charitable contribution. Unused credit may carry forward up to five years.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-band" id="checker">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">The checker</p>
+      <h2>Check your situation</h2>
+      <p class="section-sub">Three quick questions. Instant plain-English result. Nothing is stored or submitted.</p>
+    </div>
+    <div class="layout-checker">
+      <div class="card checker-shell reveal">
+        <div class="progress-wrap">
+          <div class="progress" id="progress" aria-label="Progress">
+            <div class="progress-step active" data-p="1"><span class="dot">1</span><span class="lbl">Tax bill</span></div>
+            <div class="progress-step" data-p="2"><span class="dot">2</span><span class="lbl">Filing</span></div>
+            <div class="progress-step" data-p="3"><span class="dot">3</span><span class="lbl">State</span></div>
+            <div class="progress-step" data-p="4"><span class="dot">4</span><span class="lbl">Result</span></div>
+          </div>
+          <div class="progress-bar" aria-hidden="true"><span id="progressFill"></span></div>
+        </div>
+        <div class="step-panel active" data-step="1">
+          <p class="step-title">Do you expect to owe federal income tax for 2027?</p>
+          <p class="step-help">This credit is nonrefundable — it only helps if you have tax liability to reduce.</p>
+          <div class="option-grid">
+            <button type="button" class="option" data-key="tax" data-val="yes"><span class="opt-ic"><svg aria-hidden="true"><use href="#i-receipt"/></svg></span><span class="opt-txt"><span class="opt-title">Yes</span><span class="opt-sub">I usually owe, or expect to owe, some federal income tax</span></span><span class="opt-check"><svg aria-hidden="true"><use href="#i-check"/></svg></span></button>
+            <button type="button" class="option" data-key="tax" data-val="maybe"><span class="opt-ic"><svg aria-hidden="true"><use href="#i-q"/></svg></span><span class="opt-txt"><span class="opt-title">Not sure</span><span class="opt-sub">My refund / balance due varies year to year</span></span><span class="opt-check"><svg aria-hidden="true"><use href="#i-check"/></svg></span></button>
+            <button type="button" class="option" data-key="tax" data-val="no"><span class="opt-ic"><svg aria-hidden="true"><use href="#i-zero"/></svg></span><span class="opt-txt"><span class="opt-title">No</span><span class="opt-sub">I typically owe $0 or get a full refund of all withheld tax</span></span><span class="opt-check"><svg aria-hidden="true"><use href="#i-check"/></svg></span></button>
+          </div>
+          <div class="nav-btns"><span></span><button type="button" class="btn btn-primary" id="next1" disabled>Continue<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+        </div>
+        <div class="step-panel" data-step="2">
+          <p class="step-title">How will you file?</p>
+          <p class="step-help">Filing status affects how the $1,700 cap may apply under proposed rules.</p>
+          <div class="option-grid">
+            <button type="button" class="option" data-key="status" data-val="single"><span class="opt-ic"><svg aria-hidden="true"><use href="#i-user"/></svg></span><span class="opt-txt"><span class="opt-title">Single / Head of household / Married filing separately</span><span class="opt-sub">Plan around the $1,700 per-taxpayer limit</span></span><span class="opt-check"><svg aria-hidden="true"><use href="#i-check"/></svg></span></button>
+            <button type="button" class="option" data-key="status" data-val="mfj"><span class="opt-ic"><svg aria-hidden="true"><use href="#i-users"/></svg></span><span class="opt-txt"><span class="opt-title">Married filing jointly</span><span class="opt-sub">Proposed rules may allow up to $3,400 if each spouse gives</span></span><span class="opt-check"><svg aria-hidden="true"><use href="#i-check"/></svg></span></button>
+          </div>
+          <div class="nav-btns"><button type="button" class="btn btn-ghost" data-back="1">Back</button><button type="button" class="btn btn-primary" id="next2" disabled>Continue<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+        </div>
+        <div class="step-panel" data-step="3">
+          <p class="step-title">Where do you live?</p>
+          <p class="step-help">Your state affects whether local students can receive scholarships — not whether you can donate.</p>
+          <label class="field-label" for="state">Select your state</label>
+          <div class="select-wrap"><select id="state"><option value="">Choose state…</option></select></div>
+          <div class="nav-btns"><button type="button" class="btn btn-ghost" data-back="2">Back</button><button type="button" class="btn btn-primary" id="next3" disabled>See my result<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button></div>
+        </div>
+        <div class="step-panel" data-step="4">
+          <div id="resultCard" aria-live="polite"></div>
+          <div class="nav-btns"><button type="button" class="btn btn-ghost" id="restart">Start over</button><a class="btn btn-primary" href="#notify">Get launch updates<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
+        </div>
+      </div>
+      <aside class="card side-panel reveal">
+        <p class="side-title">At a glance</p>
+        <div class="mini-fact"><span class="mf-ic"><svg aria-hidden="true"><use href="#i-book"/></svg></span><div><div class="k">What this is</div><div class="v">Federal Scholarship Tax Credit (IRC §25F)</div></div></div>
+        <div class="mini-fact"><span class="mf-ic"><svg aria-hidden="true"><use href="#i-receipt"/></svg></span><div><div class="k">Credit type</div><div class="v">Nonrefundable · dollar-for-dollar</div></div></div>
+        <div class="mini-fact"><span class="mf-ic"><svg aria-hidden="true"><use href="#i-gift"/></svg></span><div><div class="k">Eligible gift</div><div class="v">Cash to a listed SGO</div></div></div>
+        <div class="mini-fact"><span class="mf-ic"><svg aria-hidden="true"><use href="#i-map"/></svg></span><div><div class="k">State list (IRS)</div><div class="v">As of Sep 14, 2026</div></div></div>
+        <p class="side-src">Sources: <a href="https://www.irs.gov/government-entities/federal-state-local-governments/federal-scholarship-tax-credit-fstc" target="_blank" rel="noopener">IRS FSTC</a> · <a href="https://www.congress.gov/crs-product/R48724" target="_blank" rel="noopener">CRS R48724</a></p>
+      </aside>
+    </div>
+    <p class="footnote">*30 states with advance elections to participate for 2027, per IRS page reviewed Sep 16, 2026.</p>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">The rules, briefly</p>
+      <h2>How it works</h2>
+      <p class="section-sub">Verified facts from the IRS and Congressional Research Service — nothing more.</p>
+    </div>
+    <div class="steps-grid">
+      <article class="step-card reveal"><span class="step-ic t1"><svg aria-hidden="true"><use href="#i-gift"/></svg></span><span class="step-num">Step 1</span><h3>Give cash to an eligible SGO</h3><p>On or after Jan 1, 2027, donate cash to a Scholarship Granting Organization on a participating state’s IRS list. Designate it as a qualified contribution.</p></article>
+      <article class="step-card reveal"><span class="step-ic t2"><svg aria-hidden="true"><use href="#i-receipt"/></svg></span><span class="step-num">Step 2</span><h3>Claim a dollar-for-dollar credit</h3><p>Individuals may claim a nonrefundable federal credit equal to the gift, up to $1,700 per taxpayer. It reduces tax owed — it is not a cash refund by itself.</p></article>
+      <article class="step-card reveal"><span class="step-ic t3"><svg aria-hidden="true"><use href="#i-globe"/></svg></span><span class="step-num">Good to know</span><h3>Donate from anywhere</h3><p>You can generally give from any state. Scholarships go to eligible students in opted-in states. Living in a non-participating state does not by itself block the donor credit.</p></article>
+      <article class="step-card reveal"><span class="step-ic t4"><svg aria-hidden="true"><use href="#i-scale"/></svg></span><span class="step-num">Watch for</span><h3>Watch the offsets</h3><p>The federal credit is reduced by any state tax credit for the same gift. You cannot also claim a charitable deduction for the same contribution.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-band" id="faq">
+  <div class="wrap faq-layout">
+    <div class="section-head reveal">
+      <p class="kicker">Questions</p>
+      <h2>FAQ</h2>
+      <p class="section-sub">Straight answers, with sources noted.</p>
+      <div class="sources">
+        <p class="sources-title">Primary sources</p>
+        <ul>
+          <li><a href="https://www.irs.gov/government-entities/federal-state-local-governments/federal-scholarship-tax-credit-fstc" target="_blank" rel="noopener">IRS — Federal Scholarship Tax Credit (FSTC)</a></li>
+          <li><a href="https://www.congress.gov/crs-product/R48724" target="_blank" rel="noopener">CRS Report R48724</a></li>
+          <li><a href="https://www.govinfo.gov/content/pkg/FR-2026-10-02/html/2026-20277.htm" target="_blank" rel="noopener">Proposed regulations REG-117199-25</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="faq reveal">
+      <details open><summary>Is the credit refundable?<span class="faq-ic" aria-hidden="true"></span></summary><p class="faq-body">No. It is nonrefundable. It can reduce federal income tax you owe, but will not create a refund by itself if the credit exceeds your tax. Unused amounts may generally be carried forward up to five years. (CRS R48724; IRC §25F.)</p></details>
+      <details><summary>Can married couples claim $3,400?<span class="faq-ic" aria-hidden="true"></span></summary><p class="faq-body"><strong>Uncertain until final regs.</strong> The statute caps the credit at $1,700 per taxpayer. Proposed Treasury/IRS regulations (Oct 2, 2026, REG-117199-25) interpret each spouse on a joint return as having a separate $1,700 limit — up to $3,400 total — if each spouse makes up to $1,700 of qualifying contributions. Treat $3,400 as proposed, not final.</p></details>
+      <details><summary>Do I have to live in an opted-in state?<span class="faq-ic" aria-hidden="true"></span></summary><p class="faq-body">No for donors. Residents of nonparticipating states may still get credits for gifts to SGOs in participating states. Families in nonparticipating states generally cannot receive these federally supported scholarships.</p></details>
+      <details><summary>What counts as a qualifying gift?<span class="faq-ic" aria-hidden="true"></span></summary><p class="faq-body">Cash contributions only (not stock or other property under the enacted law). Must go to a qualifying SGO on a participating state’s list. Cannot be earmarked for a particular student.</p></details>
+      <details><summary>Which states have opted in?<span class="faq-ic" aria-hidden="true"></span></summary><p class="faq-body">As of September 14, 2026, the IRS lists 30 states with advance elections for 2027: AL, AK, AR, CO, FL, GA, ID, IN, IA, KS, KY, LA, MS, MO, MT, NE, NV, NH, ND, NC, OH, OK, SC, SD, TN, TX, UT, VA, WV, WY.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="notify">
+  <div class="wrap">
+    <div class="notify-card reveal">
+      <div class="notify-pitch">
+        <span class="notify-ic"><svg aria-hidden="true"><use href="#i-mail"/></svg></span>
+        <h2>Get notified when gifts open</h2>
+        <p class="muted">We’ll tip you when qualifying donations can begin (Jan 1, 2027) and when partner SGOs are listed.</p>
+        <ul class="ticks">
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>A heads-up when qualifying gifts can begin</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>When SGOs in participating states are listed</li>
+          <li><svg aria-hidden="true"><use href="#i-check"/></svg>Short, plain-English emails only</li>
+        </ul>
+      </div>
+      <form id="notifyForm" action="https://formsubmit.co/ajax/mr.ace8019@gmail.com" method="POST" class="notify-form">
+        <input type="hidden" name="_subject" value="CreditBridge waitlist signup" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="source" value="creditbridge" />
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <div class="two-up">
+          <div class="field"><label class="field-label" for="name">Name <span class="opt">(optional)</span></label><input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" /></div>
+          <div class="field"><label class="field-label" for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required /></div>
+        </div>
+        <div class="two-up">
+          <div class="field"><label class="field-label" for="stateWaitlist">State</label><div class="select-wrap"><select id="stateWaitlist" name="state" required><option value="">Choose state…</option></select></div></div>
+          <div class="field"><label class="field-label" for="interest">I’m interested as…</label><div class="select-wrap"><select id="interest" name="interest" required><option value="Taxpayer / donor">Taxpayer / donor</option><option value="Parent / family">Parent / family</option><option value="School or church campaign lead">School or church campaign lead</option><option value="Just curious">Just curious</option></select></div></div>
+        </div>
+        <button class="btn btn-primary btn-block" id="notifyBtn" type="submit">Join the waitlist<svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        <p id="notifyMsg" class="notify-msg" role="status" aria-live="polite" hidden></p>
+        <p class="privacy"><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg><span>Privacy: we use your email only to send CreditBridge launch updates about the Federal Scholarship Tax Credit. No selling or sharing. Not tax advice. Reply to a waitlist email anytime to be removed.</span></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href="/creditbridge/" aria-label="CreditBridge home"><svg class="brand-mark" aria-hidden="true"><use href="#i-logo"/></svg><span>CreditBridge</span></a>
+      <p class="footer-tag">Is your $1,700 free? A plain-English guide to the Federal Scholarship Tax Credit.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="#flow">How it flows</a><a href="#checker">Checker</a><a href="#how">How it works</a><a href="#faq">FAQ</a><a href="#notify">Get notified</a>
+    </nav>
+  </div>
+  <div class="wrap footer-legal">
+    <p><strong>Not tax advice.</strong> CreditBridge is an informational site about the Federal Scholarship Tax Credit (IRC §25F). Always verify against current IRS guidance and consult a tax professional.</p>
+    <p class="footer-meta">© 2026 CreditBridge · <a href="https://github.com/KOBE813/is-your-1700-free">Source on GitHub</a></p>
+  </div>
+</footer>
+<script src="/creditbridge/app.js"></script>
+</body>
+</html>
